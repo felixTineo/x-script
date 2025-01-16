@@ -1,8 +1,26 @@
-.env
+# Ignorar el entorno virtual
 bin/
 include/
 lib/
 lib64/
-lib64/
 pyvenv.cfg
-__pycache__
+
+# Archivos de Python generados automáticamente
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar notebooks temporales o no necesarios (si es aplicable)
+*.ipynb_checkpoints
+
+# Archivos de configuración de IDE (si usas PyCharm o VS Code)
+.idea/
+.vscode/
+
+# Archivos relacionados con datos o configuraciones de compartición
+share/
+
+# Otros archivos que pueden ser generados por herramientas o logs
+*.log
+*.env
