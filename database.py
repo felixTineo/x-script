@@ -1,14 +1,14 @@
-import setup
+import config
 import redis
 
 
 def connect_to_redis():
     return redis.Redis(
-        host=setup.REDIS_HOST,
-        port=setup.REDIS_PORT,
+        host=config.REDIS_HOST,
+        port=config.REDIS_PORT,
         decode_responses=True,
-        username=setup.REDIS_USERNAME,
-        password=setup.REDIS_PASSWORD,
+        username=config.REDIS_USERNAME,
+        password=config.REDIS_PASSWORD,
         db=0,
     )
 

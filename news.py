@@ -1,8 +1,8 @@
 from newsdataapi import NewsDataApiClient
-import setup
+import config
 
-url = f"{setup.NEWS_API_URL}/{setup.NEWS_API_VERSION}/latest"
-api = NewsDataApiClient(apikey=setup.NEWS_API_KEY)
+url = f"{config.NEWS_API_URL}/{config.NEWS_API_VERSION}/latest"
+api = NewsDataApiClient(apikey=config.NEWS_API_KEY)
 
 
 def get() -> list:

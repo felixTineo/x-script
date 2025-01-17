@@ -1,13 +1,13 @@
 import tweepy
-import setup
+import config
 
-bearer_oauth = setup.BEARER_TOKEN
-api_key = setup.API_KEY
-api_secret = setup.API_SECRET
-access_token = setup.ACCESS_TOKEN
-access_token_secret = setup.ACCESS_TOKEN_SECRET
-client_id = setup.CLIENT_ID
-client_secret = setup.CLIENT_SECRET
+bearer_oauth = config.BEARER_TOKEN
+api_key = config.API_KEY
+api_secret = config.API_SECRET
+access_token = config.ACCESS_TOKEN
+access_token_secret = config.ACCESS_TOKEN_SECRET
+client_id = config.CLIENT_ID
+client_secret = config.CLIENT_SECRET
 
 auth = tweepy.OAuthHandler(client_id, client_secret)
 auth.set_access_token(
