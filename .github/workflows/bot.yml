@@ -4,6 +4,7 @@ on:
   schedule:
     # Se ejecuta cada 2 horas entre 8:00 AM y 8:00 PM hora de Venezuela (UTC-4)
     - cron: "0 12-23/2 * * *"
+  workflow_dispatch:
 
 jobs:
   run-bot:
