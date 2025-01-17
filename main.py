@@ -48,9 +48,11 @@ try:
     text = ai_comment if ai_comment else current_new["title"]
     link = current_new["link"] if current_new["link"] else ""
     post = f"{text} \n{link}"
+    result = tweet.post(post, [])
+    print("Resultado del tweet:", result)
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     print("POST:", post)
-    # result = tweet.post(post, [])
-    # print("Resultado del tweet:", result)
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 except Exception as e:
     print("Error al procesar la noticia o generar el post:", e)
